@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import { useId } from "react";
 import { nanoid } from "nanoid";
 import css from "./ContactForm.module.css";
+import { ErrorMessage } from "formik";
 
 export default function ContactForm({ onAdd }) {
   const initialValues = {
@@ -36,9 +37,11 @@ export default function ContactForm({ onAdd }) {
       <Form className={css.form}>
         <label htmlFor={nameFieldId}>Name</label>
         <Field type="text" name="name" id={nameFieldId} />
+        <ErrorMessage name="name" component="span" className={css.erm} />
 
         <label htmlFor={numberFieldId}>Number</label>
         <Field type="tel" name="number" id={numberFieldId} />
+        <ErrorMessage name="name" component="span" className={css.erm} />
 
         <button className={css.btn} type="submit">
           Add contact

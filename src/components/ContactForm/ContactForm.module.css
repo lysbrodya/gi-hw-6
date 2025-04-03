@@ -16,3 +16,10 @@
   font-size: 1rem;
   font-weight: bold;
 }
+.erm {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
