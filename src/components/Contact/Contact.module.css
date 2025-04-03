@@ -1,0 +1,44 @@
+.btn:hover {
+  border-color: #1a1a1a;
+  background-color: #f73232;
+  color: #1a1a1a;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1a1a1a;
+}
+.icon {
+  color: #1a1a1a;
+  margin-right: 5px;
+}
+.icon:hover {
+  color: #f73232;
+}
+
+.btn {
+  margin-left: auto;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #1a1a1a; */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.contact {
+  max-width: 200px;
+}
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.name:hover {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
